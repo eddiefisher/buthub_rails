@@ -1,0 +1,37 @@
+h3 Button size
+
+.box
+  h4 Normal
+  .button.fa.fa-check Div Text
+  | &nbsp;
+  = button_tag 'Button', class: 'button fa fa-check'
+  | &nbsp;
+  = link_to 'Link', '#', class: 'button fa fa-check'
+  | &nbsp;
+  = link_to 'Link.disabled', '#', class: 'button fa fa-check disabled'
+  | &nbsp;
+  = text_field_tag 'input', 'input=button', type: 'button', class: 'button fa fa-check'
+  | &nbsp;
+  = text_field_tag 'input', 'input=submit', type: 'submit', class: 'button fa fa-check'
+  | &nbsp;
+  = text_field_tag 'input', 'input=submit.disabled', type: 'submit', class: 'button fa fa-check disabled'
+  | &nbsp;
+  = text_field_tag 'input', 'input=submit:disabled', type: 'submit', class: 'button fa fa-check', disabled: :disabled
+
+.box
+  h4 Mini
+  .button_mini.fa.fa-check Div Text
+  | &nbsp;
+  = button_tag 'Button', class: 'button_mini fa fa-check'
+  | &nbsp;
+  = link_to 'Link', '#', class: 'button_mini fa fa-check'
+  | &nbsp;
+  = link_to 'Link.disabled', '#', class: 'button_mini fa fa-check disabled'
+  | &nbsp;
+  = text_field_tag 'input', 'input=button', type: 'button', class: 'button_mini fa fa-check'
+  | &nbsp;
+  = text_field_tag 'input', 'input=submit', type: 'submit', class: 'button_mini fa fa-check'
+  | &nbsp;
+  = text_field_tag 'input', 'input=submit.disabled', type: 'submit', class: 'button_mini fa fa-check disabled'
+  | &nbsp;
+  = text_field_tag 'input', 'input=submit:disabled', type: 'submit', class: 'button_mini fa fa-check', disabled: :disabled

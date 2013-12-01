@@ -1,0 +1,55 @@
+.box
+  margin-bottom: 10px
+
+// button colors
+.button
+  @extend %button_color_default
+  @extend %button_size_normal
+
+.button_primary
+  @extend %button_color_primary
+  @extend %button_size_normal
+
+.button_danger
+  @extend %button_color_danger
+  @extend %button_size_normal
+
+.button_blue
+  @extend %button_color_blue
+  @extend %button_size_normal
+
+.button_dark_gray
+  @extend %button_color_dark_gray
+  @extend %button_size_normal
+
+// button size
+.button_mini
+  @extend %button_color_default
+  @extend %button_size_mini
+
+// social count
+.button_mini_with_count
+  @extend %button_color_default
+  @extend %button_size_mini
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
+
+.button_mini_social
+  @extend %button_color_default
+  @extend %button_size_mini
+  z-index: 1
+
+.social_count
+  @extend %social_count
+
+.social_count_triangle
+  @extend %social_count_triangle
+
+// button group
+.button_group
+  @extend %button_group
+
+.button_mini_group
+  .button
+    @extend %button_size_mini
+  @extend %button_group
