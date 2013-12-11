@@ -1,6 +1,9 @@
 .box
   margin-bottom: 10px
 
+body
+  margin-bottom: 400px
+
 // button colors
 .button
   @extend %button_color_default
@@ -39,8 +42,12 @@
   @extend %button_size_mini
   z-index: 1
 
+.social_count_radius
+  @extend %social_count
+
 .social_count
   @extend %social_count
+  margin-left: 0
 
 .social_count_triangle
   @extend %social_count_triangle
@@ -53,3 +60,16 @@
   .button
     @extend %button_size_mini
   @extend %button_group
+
+// menu
+.js_menu
+  @extend %popup
+
+// select
+// .switcher
+//   @extend %button_color_default
+//   @extend %button_size_mini
+//   @extend %switcher
+//   .icon_justify
+//     @extend %icon_before
+//     @extend .fa-align-justify
